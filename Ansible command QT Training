@@ -1,0 +1,245 @@
+ansible@ip-172-31-47-122:~$ history
+    1  sudo apt-get update
+    2  cdlear
+    3  clear
+    4  cd ~
+    5  ansible --version
+    6  python --version
+    7  clear
+    8  ssh ansible@172.31.44.0
+    9  ansible -m ping all
+   10  ssh-copy-id ansible@172.31.44.0
+   11  clea
+   12  clear
+   13  ls ~/.ssh
+   14  ssh-keygen
+   15  ls ~/.ssh
+   16  ssh-copy-id ansible@172.31.44.0
+   17  ssh-copy-id ansible@localhost
+   18  ansible -m ping all
+   19  clear
+   20  cd /etc/ansible
+   21  ls
+   22  cat hosts
+   23  cd ~/.ssh/
+   24  ls
+   25  cat authorized_keys
+   26  clear
+   27  git --version
+   28  sudo apt-get install tree -y
+   29  tree
+   30  cd ~
+   31  pwd
+   32  clear
+   33  cd ~
+   34  mkdir testplaybooks
+   35  cd testplaybooks/
+   36  vi testinventry
+   37  vi tree-playbook.yml
+   38  tree --version
+   39  sudo apt-get purge tree
+   40  tree --version
+   41  clear
+   42  ansible-playbook -i testinventry tree-playbook.yml --check
+   43  vi tree-playbook.yml
+   44  ansible-playbook -i testinventry tree-playbook.yml --check
+   45  vi tree-playbook.yml
+   46  ansible-playbook -i testinventry tree-playbook.yml --check
+   47  vi tree-playbook.yml
+   48  ansible-playbook -i testinventry tree-playbook.yml --check
+   49  vi tree-playbook.yml
+   50  ansible-playbook -i testinventry tree-playbook.yml --check
+   51  python --version
+   52  ssh-copy-id ansible@172.31.47.122
+   53  clear
+   54  ansible-playbook -i testinventry tree-playbook.yml --check
+   55  sudo apt update
+   56  sudo apt install software-properties-common
+   57  sudo apt-add-repository --yes --update ppa:ansible/ansible
+   58  ansible-playbook -i testinventry tree-playbook.yml --check
+   59  ansible-playbook -i testinventry tree-playbook.yml
+   60  clear
+   61  cd ~
+   62  ls
+   63  ansible-playbook -i testinventry tree-playbook.yml
+   64  cd testplaybooks/
+   65  ansible-playbook -i testinventry tree-playbook.yml
+   66  clear
+   67  ls
+   68  cat tree-playbook.yml
+   69  vi newinventroy
+   70  ansible -i newinventroy -m ping all
+   71  cd ~
+   72  clear
+   73  ls
+   74  cd testplaybooks/
+   75  ls
+   76  ansible -m ping -i testinventry all
+   77  cat newinventroy
+   78  ansible newinventroy -i ping all
+   79  ansible -m newinventroy -i ping all
+   80  cat newinventroy
+   81  vi newinventroy
+   82  ansible -m newinventroy -i ping all
+   83  vi newinventroy
+   84  ansible -m newinventroy -i ping all
+   85  ansible -i newinventroy -m apt -a "name=stress state=present"
+   86  ansible -i newinventroy -m apt -a "name=stress state=present" -b all
+   87  stress --version
+   88  ansible -i newinventroy -m apt -a name=stress state=absent" -b all
+   89  ansible -i newinventroy -m apt -a "name=stress state=absent" -b all
+   90  stress --version
+   91  clear
+   92  vi multiplay.yml
+   93  ansible-playbook -i newinventroy multiplay.yml
+   94  vi multiplay.yml
+   95  ansible-playbook -i newinventroy multiplay.yml
+   96  vi multiplay.yml
+   97  rm multiplay.yml
+   98  vi multiplay.yml
+   99  ansible-playbook -i newinventroy multiplay.yml
+  100  vi multiplay.yml
+  101  clear
+  102  ansible -i newinventroy -m apt -a "name=tree state=present" -b all
+  103  ansible -i newinventroy -m file -a 'path=/home/ansible/1.txt state=touch' all
+  104  ls /home/ansible
+  105  ls
+  106  cd ~
+  107  clear
+  108  ls
+  109  ssh-copy-id ansible@172.31.24.243
+  110  ssh 172.31.24.243
+  111  clear
+  112  ls
+  113  vi hosts
+  114  ansible -m setup -i hosts all | less
+  115  ansible -m setup -a "filter=*os*" all
+  116  vi hosts
+  117  ansible -m setup -a "filter=*os*" all
+  118  clear
+  119  cat hosts
+  120  ansible -m setup -a "filter=*os*" all
+  121  clear
+  122  ls
+  123  cd testplaybooks/
+  124  ls
+  125  vi lamp.yaml
+  126  vi ../hosts
+  127  ansible-playbook -i ../hosts lamp.yaml --check
+  128  clear
+  129  ansible-playbook -i ../hosts lamp.yaml
+  130  clear
+  131  ls
+  132  cd
+  133  ls
+  134  cat hosts
+  135  cd testplaybooks/
+  136  vi lamp-new.yaml
+  137  vi hosts
+  138  ansible-playbook -i hosts lamp-new.yaml --check
+  139  ansible-playbook -i hosts lamp-new.yaml
+  140  clear
+  141  ls
+  142  cat lamp-new.yaml
+  143  clear
+  144  ls
+  145  vi lamp-new-yaml
+  146  cat lamp-new-yaml
+  147  clear
+  148  vi hosts.yml
+  149  ansible-playbook -i hosts.yml lamp-new.yaml --check
+  150  clear
+  151  ls
+  152  vi hosts.yml
+  153  ansible-playbook -i hosts.yml lamp-new.yaml --check
+  154  clear
+  155  cat hosts.yml
+  156  ls
+  157  cat lamp-new.yaml
+  158  vi lamp-new.yaml
+  159  clear
+  160  ansible-playbook -i hosts.yml lamp-new.yaml --check
+  161  vi lamp-new.yaml
+  162  clear
+  163  ls
+  164  vi lamp-new.yaml
+  165  ansible-playbook -i hosts.yml lamp-new.yaml --check
+  166  clear
+  167  cd ~
+  168  clear
+  169  ls
+  170  cd ~
+  171  ls
+  172  clear
+  173  mkdir newplay
+  174  cd newplay/
+  175  vi hosts.yml
+  176  vi lamp.ym;
+  177  ls
+  178  mv lamp.ym lamp.yml
+  179  vi lamp.yml
+  180  ansible-playbook -i hosts.yml lamp.yml --check
+  181  vi lamp.yml
+  182  ansible-playbook -i hosts.yml lamp.yml --check
+  183  vi lamp.yml
+  184  ansible-playbook -i hosts.yml lamp.yml --check
+  185  vi lamp.yml
+  186  ansible-playbook -i hosts.yml lamp.yml --check
+  187  vi lamp.yml
+  188  ansible-playbook -i hosts.yml lamp.yml --check
+  189  vi hosts.yml
+  190  ansible-playbook -i hosts.yml lamp.yml --check
+  191  vi hosts.yml
+  192  ansible-playbook -i hosts.yml lamp.yml --check
+  193  clear
+  194  rm hosts.yml
+  195  vi hosts
+  196  tree
+  197  mkdir group_vars
+  198  touch group_vars/webservers
+  199  vi group_vars/webservers
+  200  mkdir host_vars
+  201  touch host_vars/172.31.44.0
+  202  vi host_vars/172.31.44.0
+  203  ansible-playbook -i hosts lamp.yml --check
+  204  clear
+  205  ansible-playbook -i hosts -e package_name=tree lamp.yml --check
+  206  cat lamp.yml
+  207  clear
+  208  vi lamp.yml
+  209  ansible-playbook -i hosts -e package_name=tree lamp.yml --check
+  210  vi lamp.yml
+  211  ansible-playbook -i hosts -e package_name=tree lamp.yml --check
+  212  vi lamp.yml
+  213  ansible-playbook -i hosts -e package_name=tree lamp.yml --check
+  214  vi lamp.yml
+  215  ansible-playbook -i hosts -e package_name=tree lamp.yml --check
+  216  vi lamp.yml
+  217  ansible-playbook -i hosts -e package_name=tree lamp.yml --check
+  218  vi lamp.yml
+  219  ansible-playbook -i hosts -e package_name=tree lamp.yml --check
+  220  vi lamp.yml
+  221  cd ~
+  222  pwd
+  223  cd ~
+  224  clear
+  225  ls
+  226  git clone https://github.com/khadak-bogati/ansible-QT-train.git
+  227  ls
+  228  mv host ansible-QT-train/
+  229  mv hosts ansible-QT-train/
+  230  mv newplay ansible-QT-train/
+  231  mv testplaybooks/ ansible-QT-train/
+  232  ls
+  233  cd ansible-QT-train/
+  234  git init
+  235  git status
+  236  git add .
+  237  git commit -m "ansible"
+  238  git config user.email "khadakbogati18@gmail.com"
+  239  git config user.name "khadak"
+  240  git commit -m "ansible"
+  241  git push origin master
+  242  clear
+  243  cd ..
+  244  history
