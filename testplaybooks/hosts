@@ -1,0 +1,10 @@
+
+[ubuntu]
+172.31.44.0
+
+[redhat]
+172.31.24.243
+
+[webservers]
+172.31.44.0 package_name=apache2
+172.31.24.243 package_name=httpd

@@ -1,0 +1,15 @@
+---
+
+- hosts: all
+  tasks:
+    - name: ping
+      ping:
+        data: crash
+---
+- hosts: all
+  tasks:
+    - name: install tree
+      apt:
+        name: tree
+        state: present
+
